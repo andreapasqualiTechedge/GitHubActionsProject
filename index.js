@@ -1,4 +1,5 @@
 'use strict';
+
 const Hapi = require('@hapi/hapi');
 const Boom = require('@hapi/boom');
 const axios = require('axios');
