@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  run-my-app:
+  my-app-into-runner:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
