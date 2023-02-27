@@ -1,4 +1,5 @@
 name: my-workflow
+run-name: ${{ github.actor }} is running this workflow
 on:
   push:
     branches: ["master"]
@@ -10,11 +11,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
   run-my-app:
