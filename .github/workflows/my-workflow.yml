@@ -23,7 +23,7 @@ jobs:
       - run: npm ic
       - run: node -v
       #- run: npm start
-  deploy:
+  deploy-github-page:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
