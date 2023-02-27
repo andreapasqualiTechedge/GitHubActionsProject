@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  my-app-into-runner:
+  run-my-app:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
           node-version: '14'
       - run: npm ic
       - run: node -v
-      - run: npm start
+      #- run: npm start
   deploy:
     environment:
       name: github-pages
